@@ -11,7 +11,6 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private Animator playerAnimController;
 
 
-
     // Store Animator references using a hash for better performance
     private int MoveInputXHash = Animator.StringToHash("MoveInputX");
     private int MoveInputYHash = Animator.StringToHash("MoveInputY");
@@ -20,11 +19,7 @@ public class PlayerMovementController : MonoBehaviour
     private int LastMoveXHash = Animator.StringToHash("LastMoveX");
     private int LastMoveYHash = Animator.StringToHash("LastMoveY");
 
-
     public bool moveEnabled = true;
-
-
-
 
 
     private void Awake()
@@ -39,7 +34,6 @@ public class PlayerMovementController : MonoBehaviour
     private void Update()
     {  
         HandlePlayerAnimation();
-
 
     }
 
@@ -76,8 +70,6 @@ public class PlayerMovementController : MonoBehaviour
             playerAnimController.SetBool(IsMovingHash, false);
             return;
         }
-            
-     
 
         if (moveInput != Vector2.zero)
         {

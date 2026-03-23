@@ -19,6 +19,9 @@ public class ServiceHub : MonoBehaviour
 
     [SerializeField] private UIManager uiManager;
     [SerializeField] private GameObject player;
+    [SerializeField] private DialogueManager DialogueManager;
+
+    //dialog_manager stuff here
 
     // public accessors for each system to allow other scripts to easily access them
 

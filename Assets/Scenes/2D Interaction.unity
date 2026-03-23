@@ -393,6 +393,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147018649}
   m_CullTransparentMesh: 1
+--- !u!1 &331858011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9137456971105611655, guid: 6c2c6db686eaa4c43a8d70548fd129d3, type: 3}
+  m_PrefabInstance: {fileID: 8726443442751965045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &331858016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331858011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62b4c432bc89394e9c1c66dcfd3b48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcName: Gnome
+  sentences:
+  - Hello...
+  - I am a lawn ordament... do you agree?
+  - Of course you think that.. ~humph
 --- !u!1 &400608470
 GameObject:
   m_ObjectHideFlags: 0
@@ -10235,6 +10257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiManager: {fileID: 1220462168}
   player: {fileID: 631075048}
+  DialogueManager: {fileID: 2069507378}
 --- !u!4 &1756705438
 Transform:
   m_ObjectHideFlags: 0
@@ -10248,6 +10271,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2069507377}
   - {fileID: 1220462169}
   - {fileID: 519420032}
   - {fileID: 991472027}
@@ -10434,6 +10458,50 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &2069507376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2069507377}
+  - component: {fileID: 2069507378}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2069507377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069507376}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1756705438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2069507378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069507376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc77c516dfd4314fb32cc04e807df47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6263336036684904273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10568,6 +10636,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2768083375602785815, guid: 8ecc3ae335e963f4f8f59c4c96a4d16d, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 1220462168}
     - target: {fileID: 7895259218568336173, guid: 8ecc3ae335e963f4f8f59c4c96a4d16d, type: 3}
       propertyPath: m_Name
       value: Signpost
@@ -10669,10 +10741,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gnome
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 563502323341006943, guid: 6c2c6db686eaa4c43a8d70548fd129d3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9137456971105611655, guid: 6c2c6db686eaa4c43a8d70548fd129d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331858016}
   m_SourcePrefab: {fileID: 100100000, guid: 6c2c6db686eaa4c43a8d70548fd129d3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

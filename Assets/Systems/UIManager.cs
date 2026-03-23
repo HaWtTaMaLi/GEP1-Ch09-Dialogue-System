@@ -24,18 +24,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
 
 
-
-
-
     private void Awake()
     {
         DisplayMessage("");
         HidePrompt();
-
         HideDialoguePanel();
     }
-
-
 
     #region Prompt
 
@@ -96,6 +90,7 @@ public class UIManager : MonoBehaviour
 
             yield return null;
         }
+        
         messageText.text = "";
     }
 
