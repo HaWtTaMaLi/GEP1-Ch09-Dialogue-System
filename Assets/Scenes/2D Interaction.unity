@@ -413,7 +413,7 @@ MonoBehaviour:
   npcName: Gnome
   sentences:
   - Hello...
-  - I am a lawn ordament... do you agree?
+  - I am a lawn ornament... do you agree?
   - Of course you think that.. ~humph
 --- !u!1 &400608470
 GameObject:
