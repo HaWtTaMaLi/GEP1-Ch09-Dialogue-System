@@ -5,6 +5,7 @@ public class Interactable_Dialogue : MonoBehaviour, IInteractable
 {
     [SerializeField] public DialogueManager dialogueManager;
     [SerializeField] bool debugEnabled = false;
+
     public string npcName;
     [Header("Dialogue")]
     [TextArea(3,10)] //box size
