@@ -5,8 +5,6 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] bool debugEnabled = false;
-
     [Header("Interact Prompt")]
     [SerializeField] private TMP_Text promptText;
     [SerializeField] private string prompt;
@@ -23,6 +21,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
 
+    [SerializeField] bool debugEnabled = false;
 
     private void Awake()
     {
@@ -108,6 +107,11 @@ public class UIManager : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
+
+    public void SetDialogueText(string dialogueString)
+    {
+        dialogueText.text = dialogueString;
+    }
 
     #endregion
 

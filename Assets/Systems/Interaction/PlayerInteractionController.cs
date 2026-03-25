@@ -49,8 +49,6 @@ public class PlayerInteractionController : MonoBehaviour
     {
         if (context.performed)
         {
-            
-
             // if targetInteractable is not empty we can attempt to interact
             if (targetInteractable != null)
             {

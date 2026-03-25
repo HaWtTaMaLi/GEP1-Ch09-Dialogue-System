@@ -8,6 +8,7 @@ public class Interactable_Message : MonoBehaviour, IInteractable
 
     [SerializeField] private UIManager uiManager;
 
+    [SerializeField] bool debugEnabled = false;
 
     private void Awake()
     {

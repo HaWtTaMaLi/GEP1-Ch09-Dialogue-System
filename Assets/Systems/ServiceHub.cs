@@ -19,7 +19,7 @@ public class ServiceHub : MonoBehaviour
 
     [SerializeField] private UIManager uiManager;
     [SerializeField] private GameObject player;
-    [SerializeField] private DialogueManager DialogueManager;
+    [SerializeField] private DialogueManager dialogueManager;
 
     //dialog_manager stuff here
 
@@ -27,6 +27,7 @@ public class ServiceHub : MonoBehaviour
 
     public UIManager UIManager => uiManager;
     public GameObject Player => player;
+    public DialogueManager DialogueManager => dialogueManager;
 
     private void Awake()
     {

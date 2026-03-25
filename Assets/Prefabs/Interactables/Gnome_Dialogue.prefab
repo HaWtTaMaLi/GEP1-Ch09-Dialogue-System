@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 7296038359031505283}
   - component: {fileID: 8286655095087895793}
   - component: {fileID: 7396249186452638300}
-  - component: {fileID: 563502323341006943}
+  - component: {fileID: 2830460016322662997}
   m_Layer: 0
   m_Name: Gnome_Dialogue
   m_TagString: Untagged
@@ -217,7 +217,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &563502323341006943
+--- !u!114 &2830460016322662997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,7 +226,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9137456971105611655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb38d1e8849174640a56e7332a69e4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: a62b4c432bc89394e9c1c66dcfd3b48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  npcName: Gnome
+  sentences:
+  - Hello...
+  - I am a lawn ornament... do you agree?
+  - Of course you think that.. ~humph
